@@ -126,32 +126,32 @@ function bodyScrolllingToggle() {
         }
 
     })
-    portfolioItemsContainer.addEventListener("click", (event) => {
-        if (event.target.closest(".portfolio-item-inner")) {
-            const portfolioItem = event.target.closest(".portfolio-item-inner").parentElement;
-            //    console.log(portfolioItem);
-            itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
-            // console.log(itemIndex); get index of each item
-            screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshot");
-            // console.log(screenshots); get url of img array
-            // convert img string to array
-            screenshots = screenshots.split(",");
+    // portfolioItemsContainer.addEventListener("click", (event) => {
+    //     if (event.target.closest(".portfolio-item-inner")) {
+    //         const portfolioItem = event.target.closest(".portfolio-item-inner").parentElement;
+    //         //    console.log(portfolioItem);
+    //         itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
+    //         // console.log(itemIndex); get index of each item
+    //         screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshot");
+    //         // console.log(screenshots); get url of img array
+    //         // convert img string to array
+    //         screenshots = screenshots.split(",");
 
-            if (screenshots.length === 1) {
-                prevBTn.style.display = "none";
-                nextBtn.style.display = "none";
-            }
-            else {
-                prevBTn.style.display = "block";
-                nextBtn.style.display = "block";
-            }
-            // console.log(screenshots);
-            slideIndex = 0;
-            popupToggle();
-            popupSlideShow();
-            popupDetails();
-        }
-    })
+    //         if (screenshots.length === 1) {
+    //             prevBTn.style.display = "none";
+    //             nextBtn.style.display = "none";
+    //         }
+    //         else {
+    //             prevBTn.style.display = "block";
+    //             nextBtn.style.display = "block";
+    //         }
+    //         // console.log(screenshots);
+    //         slideIndex = 0;
+    //         popupToggle();
+    //         popupSlideShow();
+    //         popupDetails();
+    //     }
+    // })
     // 
 
 })();
