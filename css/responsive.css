@@ -85,6 +85,13 @@
         max-width: 260px;
     }
 }
+@media (max-width: 350px){
+    .portfolio-section .portfolio-item-img .technical {
+        
+        max-width: 115px;
+        font-size: 12px;
+    }
+}
 .home-section .home-text h2{
     font-size: 40px;
 }
