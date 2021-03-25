@@ -479,12 +479,26 @@ img{
 }
 .nav-menu .copyright-text{
     position: absolute;
-    top: 50%;
-    font-size: 15px;
+    /* top: 50%; */
+    font-size: 16px;
     color: var(--text-black-600);
-    transform: translateY(-50%) rotate(-90deg);
+    /* transform: translateY(-50%) rotate(-90deg); */
     left: -60px;
+    letter-spacing: 2px;
+    bottom: 20px;
+    left: 50%;
+    font-size: 400;
+    transform: translateX(-50%);
 }
+.nav-menu .copyright-text a{
+    
+    font-size: 16px;
+    color: var(--text-black-600);
+    text-decoration: none;
+    color: var(--skin-color);
+    font-weight: 500;
+}
+
 
 /*-- Home secton ---*/
 .home-section{
@@ -920,10 +934,32 @@ img{
     opacity: 1;
     
 } */
-.portfolio-section .portfolio-item-img .btn-1{
+.portfolio-section .portfolio-item-img .technical{
     transition: all 0.3s ease;
     position: absolute;
     left: 0;
+    bottom: -4px;
+    transform: translateY(-5px);
+    z-index: -1;
+    opacity: 0;
+    color: var(--skin-color);
+    font-size: 13px;
+    /* background-color: red; */
+    display: block;
+    font-weight: 700;
+    max-width: 160px;
+    
+}
+.portfolio-section .portfolio-item-inner:hover .portfolio-item-img .technical{
+    transform: translateY(5px);
+    opacity: 1;
+    z-index: 1;
+}
+
+.portfolio-section .portfolio-item-img .btn-1{
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 0;
     bottom: -4px;
     transform: translateY(-5px);
     z-index: -1;
@@ -941,8 +977,26 @@ img{
     margin: 10px 0 0;
     color: var(--text-black-600);
     text-transform: capitalize;
+    padding-top: 5px;
+    font-weight: 600;
 }
+/* .portfolio-section .portfolio-item-inner .technical{
+    
+    color: var(--skin-color);
+    font-size: 13px;
+    display: block;
+    font-weight: 700;
+    padding: 5px 0;
+    transition: all 0.3s;
+    opacity: 0;
 
+
+    
+}
+.portfolio-section .portfolio-item-inner:hover  .technical{
+    
+    opacity: 1;
+} */
 
 /*-- POP UP----*/
 .portfolio-popup{
@@ -958,10 +1012,12 @@ img{
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    display: none;
 }
 .portfolio-popup.open{
     opacity: 1;
     visibility: visible;
+    display: none;
 }
 .portfolio-popup .pp-loader{
     position: fixed;
@@ -1209,6 +1265,7 @@ img{
     margin: 15px 0 10px;
     text-transform: capitalize;
 }
+.contact-section .contact-item-inner p a,
 .contact-section .contact-item-inner p{
     font-size: 16px;
     color: var(--text-black-600);
