@@ -1274,6 +1274,9 @@ img{
     margin: 0;
     word-break: break-word;
 }
+.contact-section .contact-item-inner p .mailto{
+    text-decoration: none;
+}
 .contact-section .contact-form{
     flex: 0 0 100%;
     max-width: 100%;
