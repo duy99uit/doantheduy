@@ -1267,14 +1267,14 @@ img{
 }
 
 .contact-section .contact-item-inner p,
-.contact-section .contact-item-inner p .mailto{
+.contact-section .contact-item-inner p a.mailto{
     font-size: 16px;
     color: var(--text-black-600);
     line-height: 26px;
     margin: 0;
     word-break: break-word;
 }
-.contact-section .contact-item-inner p .mailto{
+.contact-section .contact-item-inner p a.mailto{
     text-decoration: none;
 }
 .contact-section .contact-form{
