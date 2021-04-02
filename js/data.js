@@ -1,3 +1,31 @@
+const skillsData = [
+    {
+        icon: "fas fa-laptop-code",
+        title: "Design Complete Website",
+        description: "Basic knowledge about web-development<br>Using NodeJS, Javascript, HTML, CSS"
+    },
+    {
+        icon: "fas fa-exchange-alt",
+        title: "Convert PSD to HTML",
+        description: " Convert layout from PSD, Figma, Adobe XD to HTML, CSS.<br>Basic knowledge about web responsive."
+    },
+    {
+        icon: "fas fa-palette",
+        title: "UI Concept Design",
+        description: "Use Figma for creating UI mockup before convert into HTML & CSS layout"
+    },
+    {
+        icon: "fas fa-fan",
+        title: "Animation & Effect",
+        description: "Make loading, scrolling effect, preloader"
+    },
+    {
+        icon: "fas fa-database",
+        title: "Database",
+        description: "NoSQL database: MongoDB, Firebase"
+    }
+
+];
 const expsData = [
     {
         timeline: "Sep, 2020 -Present",
@@ -140,6 +168,19 @@ function eduTemplate(edu) {
     </div>
     `;
 }
+function skillTemplate(skill) {
+    return `  
+    <div class="service-item">
+        <div class="service-item-inner outer-shadow">
+            <div class="icon inner-shadow">
+              <i class="${skill.icon}"></i>
+            </div>
+            <h3>${skill.title}</h3>
+            <p>${skill.description}</p>
+        </div>
+    </div>
+    `;
+}
 document.querySelector(".portfolio-items").innerHTML = ` 
       ${projectsData.map(projectTemplate).join("")}
       
@@ -151,5 +192,9 @@ document.getElementById("exp").innerHTML = `
     `;
 document.getElementById("education").innerHTML = ` 
     ${edusData.map(eduTemplate).join("")}
+    
+  `;
+  document.getElementById("skill-list").innerHTML = ` 
+    ${skillsData.map(skillTemplate).join("")}
     
   `;
