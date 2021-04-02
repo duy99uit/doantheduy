@@ -437,6 +437,7 @@ img{
     cursor: pointer;
     text-align: center;
     color: var(--text-black-600);
+    transition-delay: 0.6s;
 }
 .nav-menu .close-nav-menu:after{
     border-radius: 50%;
