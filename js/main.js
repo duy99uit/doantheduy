@@ -91,13 +91,9 @@ function bodyScrolllingToggle() {
 (() => {
     const filterContainer = document.querySelector(".portfolio-filter"),
         portfolioItemsContainer = document.querySelector(".portfolio-items"),
-        portfolioItems = document.querySelectorAll(".portfolio-item"),
-        popup = document.querySelector(".portfolio-popup"),
-        prevBTn = popup.querySelector(".pp-prev"),
-        nextBtn = popup.querySelector(".pp-next"),
-        closeBtn = popup.querySelector(".pp-close"),
-        projectDetailsContainer = popup.querySelector(".pp-details"),
-        projectDetailsBtn = popup.querySelector(".pp-project-details-btn");
+        portfolioItems = document.querySelectorAll(".portfolio-item")
+        ;
+        
 
     let itemIndex, slideIndex, screenshots;
 
@@ -126,46 +122,9 @@ function bodyScrolllingToggle() {
         }
 
     })
-    // portfolioItemsContainer.addEventListener("click", (event) => {
-    //     if (event.target.closest(".portfolio-item-inner")) {
-    //         const portfolioItem = event.target.closest(".portfolio-item-inner").parentElement;
-    //         //    console.log(portfolioItem);
-    //         itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
-    //         // console.log(itemIndex); get index of each item
-    //         screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshot");
-    //         // console.log(screenshots); get url of img array
-    //         // convert img string to array
-    //         screenshots = screenshots.split(",");
-
-    //         if (screenshots.length === 1) {
-    //             prevBTn.style.display = "none";
-    //             nextBtn.style.display = "none";
-    //         }
-    //         else {
-    //             prevBTn.style.display = "block";
-    //             nextBtn.style.display = "block";
-    //         }
-    //         // console.log(screenshots);
-    //         slideIndex = 0;
-    //         popupToggle();
-    //         popupSlideShow();
-    //         popupDetails();
-    //     }
-    // })
-    // 
-
+    
 })();
 
-// // prevent scrolling info
-// (() => {
-//     const sections = document.querySelectorAll(".section");
-//     // console.log(sections);
-//     sections.forEach((section) => {
-//         if (!section.classList.contains("active")) {
-//             section.classList.add("hide");
-//         }
-//     })
-// })();
 
 window.addEventListener("load",()=>{
     document.querySelector(".preloader").classList.add("fade-out");
