@@ -13,7 +13,7 @@ const alternateStyles = document.querySelectorAll(".alternate-style");
 // console.log(alternateStyles);
 function setActiveStyle(color) {
     localStorage.setItem("color", color);
-    console.log(localStorage.getItem("color"));
+    // console.log(localStorage.getItem("color"));
     changeColor();
     // console.log(color);
 

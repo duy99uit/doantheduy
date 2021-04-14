@@ -27,6 +27,25 @@ body.dark{
     --inner-shadow: inset 3px 3px 3px #222327,inset -3px -3px 3px #363636;
     --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
 }
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+ 
+  ::-webkit-scrollbar-track {
+    background: var(--bg-black-100); 
+  }
+   
+ 
+  ::-webkit-scrollbar-thumb {
+    background: var(--skin-color); 
+    border-radius: 3px;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 body{
     font-size: 16px;
     line-height: 1.5;
